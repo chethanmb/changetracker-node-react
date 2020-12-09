@@ -65,7 +65,7 @@ export default class CreateChange extends Component {
       <Form onSubmit={this.onSubmit}>
         <Form.Group controlId="Name">
           <Form.Label>Change ID</Form.Label>
-          <Form.Control type="text" value={this.state.name} onChange={this.onChangeChangeID} />
+          <Form.Control type="text" value={this.state.change_id} onChange={this.onChangeChangeID} />
         </Form.Group>
 
         <Form.Group controlId="Name">
