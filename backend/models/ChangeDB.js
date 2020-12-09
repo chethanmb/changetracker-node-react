@@ -17,7 +17,9 @@ let changeSchema = new Schema({
   account: {
     type: String,
     required: true
-  }
+  },
+  created: { type: Date, default: Date.now },
+  updated: { type: Date, default: Date.now }
 }, {
     collection: 'change_collection'
   })

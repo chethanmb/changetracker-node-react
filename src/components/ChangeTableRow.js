@@ -11,7 +11,7 @@ export default class ChangeTableRow extends Component {
     }
 
     deleteChange() {
-        axios.delete('http://localhost:4000/students/delete-change/' + this.props.obj._id)
+        axios.delete('http://localhost:4000/change/delete-change/' + this.props.obj._id)
             .then((res) => {
                 console.log('Change successfully deleted!')
             }).catch((error) => {
